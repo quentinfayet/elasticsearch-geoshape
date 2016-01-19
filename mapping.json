@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "shape": {
+      "properties": {
+        "polygon": {
+          "type": "geo_shape",
+          "tree": "quadtree",
+          "precision": "1km"
+        }
+      }
+    }
+  }
+}

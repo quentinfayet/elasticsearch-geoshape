@@ -1,0 +1,24 @@
+eddard:
+  build: ./docker
+  container_name: "eddard"
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+  volumes:
+    - ./docker/config/eddard:/usr/share/elasticsearch/config
+
+catelyn:
+  build: ./docker
+  ports:
+    - "9201:9201"
+    - "9301:9301"
+  volumes:
+    - ./docker/config/catelyn:/usr/share/elasticsearch/config
+
+arya:
+  build: ./docker
+  ports:
+    - "9202:9202"
+    - "9302:9302"
+  volumes:
+    - ./docker/config/arya:/usr/share/elasticsearch/config
